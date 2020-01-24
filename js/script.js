@@ -1,4 +1,93 @@
-var users = [];
+
+var meals = [];
+
+
+function addMeal() {
+    var confirmation = confirm('Yes/No');
+    if (!confirmation) {
+        return;
+    };
+
+    var meal = {
+        mealName: getVal('mealName'),
+        mealDescription: getVal('mealDescription'),
+        mealPrice: getVal('mealPrice'),
+        mealPicture: getVal('mealPicture'),
+        show: function () {
+            return `            
+            <div>
+                <h3>${meal.mealName}</h3>
+                <h4>${meal.mealDescription}</h4>
+                <img>${meal.mealPicture}
+            </div> 
+            `;
+        }
+    };
+    alert('Meal succesfully added!')
+    meals.push(meal);
+    osvjeziPrikaz();
+}
+
+function getVal(id) {
+    return document.getElementById(id).value;
+}
+
+
+function clearForm() {
+    fields = ['mealName', 'mealDescription', 'mealPrice', 'mealPicture']
+    for (var field of fields) {
+        resetVal(field);
+    }
+}
+
+function resetVal(id) {
+    return document.getElementById(id).value = '';
+}
+
+function osvjeziPrikaz() {
+    var res = document.getElementById('results');
+    res.innerHTML = ' ';
+    for (var i = 0; i < meals.length; i++) {
+        res.innerHTML += meals[i].show();
+    }
+}
+
+var deleteMeal = function () {
+    console.log('obrisano jelo');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* peti zadatak */
+
+/* var users = [];
 
 function login() {
     var loginEmail = document.getElementById('email').value;
@@ -81,7 +170,7 @@ function redirectSignUp() {
     hideLogin();
     showSignUp();
 }
-
+ */
 
 /* cetvrti zadatak (mjenjaj boju nakon bacanja) */
 
