@@ -1,0 +1,138 @@
+/* cetvrti zadatak */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+#login-form {
+    display: none;
+}
+
+.login-form {
+    padding: 100px 20px;
+    width: 400px;
+    background: lightgrey;
+    opacity: 0.8;
+    margin: 5% auto;
+}
+
+.login-form input {
+    width: 90%;
+    margin: 10px 7px;
+    padding: 5px 10px;
+    font-size: 32px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.login-form button {
+    width: 96%;
+    font-size: 32px;
+    background: green;
+    color: white;
+    margin: 10px 7px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.login-error {
+    display: none;
+    color: red;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 10px 7px;
+}
+
+.home {
+    width: 100%;
+    display: none;
+    background: blue;
+    padding: 15px 10px;
+    height: 50px;
+    position: relative;
+}
+
+.home span {
+    color: white;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.user-info {
+    position: absolute;    
+    right: 105px;
+}
+
+.user-info button{
+    font-size: 18px;
+    background: red;
+    color: white;
+    border-radius: 40px;
+}
+
+.user-info em {
+    font-size: 34px;
+    color: orangered;
+}
+
+
+
+/* treci zadatak */
+/* #kockica {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15%;
+    margin: auto;
+}
+#kockica p {
+    color: #ffffff;
+    font-size: 63px;
+    text-align: center;
+    font-weight: bold;
+    padding: 40%;
+}
+#button {
+    margin: 20px;
+    font-size: 44px;
+    background-color: green;
+    color: #ffffff;
+}
+#but {
+    text-align: center;
+} */
+
+/* drugi zadatak */
+/* .box {
+    width: 450px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+ */
+
+/* prvi zadatak */
+/* #prviDiv {
+    width: 400px;
+    height: 600px;
+    background-color: black;
+}
+
+#buttonClick {
+    margin: auto;
+}
+
+#colorPicker {
+    margin-top: 15px;
+    margin-left: 10px;
+} */
