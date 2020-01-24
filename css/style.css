@@ -1,4 +1,98 @@
 
+@keyframes prva {
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 200px;
+        left: 0;
+    }
+}
+
+
+
+/* transition CSS */
+
+
+
+
+
+.krug {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation-name: prva;
+    animation-duration: 3s;
+}
+
+.krug:hover {
+    background: #121212;
+    transition: all 0.7s ease-out 1.3s;
+}
+
+
+
+
+.main {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+/* 
+.kocka {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background: red;
+}
+
+.main:hover .kocka {
+    background: red;
+}
+
+.div1 {
+    transition: all 4s ease 1s;
+}
+.main:hover .div1 {
+    margin-top: 449px;
+    margin-left: 449px;
+    background: blue;
+    transform: rotate(720deg);
+}
+
+
+.div2 {
+    transition: all 4s ease 0.8s;
+}
+
+.div3 {
+    transition: all 4s ease 0.6s;
+}
+
+
+
+.main:hover .div2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: red;
+    transform: rotate(720deg);
+}
+
+.main:hover .div3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: green;
+    transform: rotate(720deg);
+} */
+
+/* sesti zadatak, hrana */
+/* 
 body {
     padding: 0;
     margin: 0;
@@ -82,38 +176,7 @@ h1 {
     background: #fff; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 /* peti zadatak */
 /* 
@@ -201,8 +264,8 @@ body {
 
 /* treci zadatak */
 /* #kockica {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     background-color: black;
     border-radius: 15%;
     margin: auto;

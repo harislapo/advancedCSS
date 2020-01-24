@@ -1,4 +1,7 @@
 
+
+/* sesti zadatak, hrana */
+/* 
 var meals = [];
 
 
@@ -55,36 +58,10 @@ function osvjeziPrikaz() {
 var deleteMeal = function () {
     console.log('obrisano jelo');
 }
+ */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 /* peti zadatak */
 
 /* var users = [];
