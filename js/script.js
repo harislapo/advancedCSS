@@ -1,7 +1,85 @@
 
 
+
+
+
+function kreirajBrojcanik(id) {
+    var sviSegmenti = [];
+    var clock = document.getElementById(id);
+    var wrapper = document.createElement('div');
+    wrapper.className = 'horBlock';
+
+    for (let i = 1; i < 8; i++) {
+
+        var div = document.createElement('div');
+        div.className = 'segment s' + i;
+        wrapper.appendChild(div);
+        sviSegmenti.push(div);
+    }
+    clock.appendChild(wrapper);
+
+    function ukljuci(segment) {
+        segment.classList.remove('ugasen')
+    }
+
+    function postaviVrijeme(broj) {
+        for (var i = 0; i < sviSegmenti.length; i++) {
+            sviSegmenti[i].classList.add('ugasen')
+        }
+
+
+    }
+
+    return {
+        setTime: postaviVrijeme
+    }
+}
+
+var br1 = kreirajBrojcanik('clock');
+br1.setTime(1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* sesti zadatak, hrana */
-/* 
+/*
 var meals = [];
 
 
@@ -17,12 +95,12 @@ function addMeal() {
         mealPrice: getVal('mealPrice'),
         mealPicture: getVal('mealPicture'),
         show: function () {
-            return `            
+            return `
             <div>
                 <h3>${meal.mealName}</h3>
                 <h4>${meal.mealDescription}</h4>
                 <img>${meal.mealPicture}
-            </div> 
+            </div>
             `;
         }
     };
@@ -61,7 +139,7 @@ var deleteMeal = function () {
  */
 
 
- 
+
 /* peti zadatak */
 
 /* var users = [];
