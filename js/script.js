@@ -2,21 +2,22 @@
 
 
 
-
 function kreirajBrojcanik(id) {
     var sviSegmenti = [];
     var clock = document.getElementById(id);
     var wrapper = document.createElement('div');
-    wrapper.className = 'horBlock';
+    wrapper.className = 'wrapper';
 
-    for (let i = 1; i < 8; i++) {
+    for (var i = 1; i < 8; i++) {
 
-        var div = document.createElement('div');
-        div.className = 'segment s' + i;
-        wrapper.appendChild(div);
-        sviSegmenti.push(div);
+        var segment = document.createElement('div');
+        segment.className = 'segment s' + i;
+        wrapper.appendChild(segment);
+        sviSegmenti.push(segment);
     }
+
     clock.appendChild(wrapper);
+
 
     function ukljuci(segment) {
         segment.classList.remove('ugasen')
@@ -26,8 +27,77 @@ function kreirajBrojcanik(id) {
         for (var i = 0; i < sviSegmenti.length; i++) {
             sviSegmenti[i].classList.add('ugasen')
         }
-
-
+        switch (broj) {
+            case 0:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[4]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 1:
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[5]);
+                break;
+            case 2:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[4]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 3:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 4:
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[5]);
+                break;
+            case 5:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 6:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[4]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 7:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[5]);
+                break;
+            case 8:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[4]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+            case 9:
+                ukljuci(sviSegmenti[0]);
+                ukljuci(sviSegmenti[1]);
+                ukljuci(sviSegmenti[2]);
+                ukljuci(sviSegmenti[3]);
+                ukljuci(sviSegmenti[5]);
+                ukljuci(sviSegmenti[6]);
+                break;
+        }
     }
 
     return {
@@ -35,11 +105,34 @@ function kreirajBrojcanik(id) {
     }
 }
 
+var date = new Date();
+var sati = date.getHours().toString().split('');
+var minute = date.getMinutes().toString().split('');
+
 var br1 = kreirajBrojcanik('clock');
-br1.setTime(1);
+br1.setTime(+sati[0]);
+
+var br2 = kreirajBrojcanik('clock');
+br2.setTime(+sati[1]);
+
+var min1 = kreirajBrojcanik('clock');
+var min2 = kreirajBrojcanik('clock');
 
 
+var sec1 = kreirajBrojcanik('clock');
+var sec2 = kreirajBrojcanik('clock');
 
+setInterval(function(){
+    var min = new Date().getMinutes().toString().split('');
+    min1.setTime(+min[0]);    
+    min2.setTime(+min[1]);}
+    ,100);
+
+setInterval(function(){
+    var sec = new Date().getSeconds().toString().split('');
+    sec1.setTime(+sec[0]);
+    sec2.setTime(+sec[1]);
+},100);
 
 
 
@@ -275,8 +368,9 @@ function changeDivColor() {
  */
 
 
-/* intro */
-/* console.log('advanced css');
+/* intro
+
+console.log('advanced css');
 
 var x = 10;
 
