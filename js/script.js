@@ -2,6 +2,45 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clock */
+/* 
 function kreirajBrojcanik(id) {
     var sviSegmenti = [];
     var clock = document.getElementById(id);
@@ -134,7 +173,7 @@ setInterval(function(){
     sec2.setTime(+sec[1]);
 },100);
 
-
+ */
 
 
 
@@ -368,14 +407,9 @@ function changeDivColor() {
  */
 
 
-<<<<<<< HEAD
-/* intro */
-/* console.log('advanced css');
-=======
 /* intro
 
 console.log('advanced css');
->>>>>>> 36cf8eb05152fb9f811dc9625ae415a7c475a2f1
 
 var x = 10;
 

@@ -1,6 +1,189 @@
 body {
+    padding: 0;
+    margin: 0;
+    background: whitesmoke
+}
+.header {
+    background: #f5ed00;
+    color: grey;
+    height: 60px;
+    text-align: center;
+}
+
+.header h2{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background: #1abc9c;
+    color: white;
+    height: 300px;
+    text-align: center;
+}
+
+.title h1{
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    background: #333;
+    height: 40px;
+    padding-top: 20px;    
+}
+
+.links a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background: grey;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background: #f1f1f1;
+    width: 40%;
+}
+
+
+.fakeImage {
+    height: 200px;
+    width: 95%;
+    background:#aaa;
+    border: 1px solid purple;
+}
+
+.smaller {
+    height: 87.5px;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainText {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* flexbox */
+
+/* 
+.container {
+    background-color: grey;
+    padding: 15px;
+    display: flex;
+    align-items: stretch;
+}
+
+.item {
+    font-size: 24px;
+    margin: 5px;
+    padding: 20px;
+    background:lightgrey;
+    align-self: center;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        background: yellowgreen;
+        flex-direction: column;
+    }
+}
+
+ */
+
+
+/* kartica */
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 500px;
+    padding: 25px 30px;
+    background-color: whitesmoke;
+    margin: 30px auto;
+}
+
+.picture {
+    width: 400px;
+    margin-left: 25px;
+    margin-bottom: -3px;
+}
+
+.advert {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+
+.advert h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.advert h1, h3{
+    text-align: center;
+}
+
+.advert h3 {
+    color: grey;
+}
+
+.advert p{
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.add {
+    margin: auto;
+    padding: 0;
+    background-color: black;
+    width: 400px;
+    height: 30px;
+    color: white;
+}
+
+.add h3 {
+    margin:0;
+    padding: 0;
+}
+ */
+
+
+
+/* clock */
+/* body {
     background-color: black;
 }
+
 .wrapper {
     height: 400px;
     width: 200px;
@@ -63,7 +246,7 @@ body {
 
 .ugasen {
     opacity: .03;
-} 
+}  */
 
 /* transitions CSS */
 
