@@ -1,0 +1,391 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.horBlock {
+    height: 550px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: black;
+    border: 1px solid black;
+    position: relative;
+}
+
+.segment {
+    width: 200px;
+    height: 7px;
+    background-color: red;
+    position: absolute;
+    border-radius:A 10px;
+    box-shadow: 0 3px 10px red;
+}
+
+.ugasen {
+    background-color: black;
+    box-shadow: 0 3px 10px black;
+
+}
+
+.s1 {
+    top: 60px;
+    left: 50px;
+    position: absolute;
+}
+
+.s2 {
+    transform: rotate(90deg);
+    top: 165px;
+    left: -55px;
+    position: absolute;
+}
+
+.s3 {
+    transform: rotate(90deg);
+    top: 165px;
+    left: 155px;
+    position: absolute;
+}
+
+.s4 {
+    top: 270px;
+    left: 50px;
+    position: absolute;
+}
+
+.s5 {
+    transform: rotate(90deg);
+    top: 375px;
+    left: -55px;
+    position: absolute;
+}
+
+.s6 {
+    transform: rotate(90deg);
+    top: 375px;
+    left: 155px;
+    position: absolute;
+}
+
+.s7 {
+    top: 480px;
+    left: 50px;
+    position: absolute;
+}
+
+/* transitions CSS */
+
+/* 
+@keyframes prva {
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 200px;
+        left: 0;
+    }
+}
+
+.krug {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation-name: prva;
+    animation-duration: 3s;
+}
+
+.krug:hover {
+    background: #121212;
+    transition: all 0.7s ease-out 1.3s;
+}
+
+.main {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+} 
+*/
+
+/* 
+.kocka {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background: black;
+}
+
+.main:hover .kocka {
+    background: black;
+}
+
+.div1 {
+    transition: all 4s ease 1s;
+}
+.main:hover .div1 {
+    margin-top: 449px;
+    margin-left: 449px;
+    background: blue;
+    transform: rotate(720deg);
+}
+
+
+.div2 {
+    transition: all 4s ease 0.8s;
+}
+
+.div3 {
+    transition: all 4s ease 0.6s;
+}
+
+
+
+.main:hover .div2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: black;
+    transform: rotate(720deg);
+}
+
+.main:hover .div3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: green;
+    transform: rotate(720deg);
+} */
+
+/* sesti zadatak, hrana */
+
+/* 
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://www.itl.cat/pngfile/big/10-103166_food-wallpaper-fast-food.jpg);
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+.home {
+    width: 100%;
+    background: darkorange;
+    padding: 15px 10px;
+    height: 40px;
+    text-align: center;
+}
+
+.meal-form {
+    color: black;
+    margin: 30px;
+    padding: 100px 10px;
+    width: 500px;
+    background: white;
+    opacity: 0.9;
+    float: left;
+}
+
+.meal-form h1 {
+    text-align: center;
+    display: inline;
+}
+
+.meal-form input, textarea {
+    width: 90%;
+    margin: 10px 7px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#add-btn {
+    background: lightgreen;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+#clear-btn {
+    background: black;
+    font-size: 20px;
+}
+
+#results {
+    float: left;
+    width: 50%;
+    color: black;
+    margin: 30px;
+    padding: 100px 10px;
+    width: 500px;
+    background: white;
+    opacity: 0.9;
+    display: block;
+}
+
+#results div {
+    width: 50%;
+    border: 2px solid purple;
+    padding: 20px;
+    background: #fff; 
+}
+
+ */
+
+/* peti zadatak */
+
+/* 
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+#login-form {
+    display: none;
+}
+
+.login-form {
+    padding: 100px 20px;
+    width: 400px;
+    background: lightgrey;
+    opacity: 0.8;
+    margin: 5% auto;
+}
+
+.login-form input {
+    width: 90%;
+    margin: 10px 7px;
+    padding: 5px 10px;
+    font-size: 32px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.login-form button {
+    width: 96%;
+    font-size: 32px;
+    background: green;
+    color: white;
+    margin: 10px 7px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.login-error {
+    display: none;
+    color: black;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 10px 7px;
+}
+
+.home {
+    width: 100%;
+    display: none;
+    background: blue;
+    padding: 15px 10px;
+    height: 50px;
+    position: relative;
+}
+
+.home span {
+    color: white;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.user-info {
+    position: absolute;    
+    right: 105px;
+}
+
+.user-info button{
+    font-size: 18px;
+    background: black;
+    color: white;
+    border-radius: 40px;
+}
+
+.user-info em {
+    font-size: 34px;
+    color: orangeblack;
+}
+*/
+
+/* treci zadatak */
+
+/* #kockica {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15%;
+    margin: auto;
+}
+#kockica p {
+    color: #ffffff;
+    font-size: 63px;
+    text-align: center;
+    font-weight: bold;
+    padding: 40%;
+}
+#button {
+    margin: 20px;
+    font-size: 44px;
+    background-color: green;
+    color: #ffffff;
+}
+#but {
+    text-align: center;
+} */
+
+/* drugi zadatak */
+
+/* .box {
+    width: 450px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+#box1 {
+    background-color: black;
+}
+
+#box2 {
+    background-color: blue;
+}
+
+ */
+
+/* prvi zadatak */
+
+/* #prviDiv {
+    width: 400px;
+    height: 600px;
+    background-color: black;
+}
+
+#buttonClick {
+    margin: auto;
+}
+
+#colorPicker {
+    margin-top: 15px;
+    margin-left: 10px;
+} */
