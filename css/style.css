@@ -1,78 +1,69 @@
 body {
-    padding: 0;
-    margin: 0;
-}
-
-.horBlock {
-    height: 550px;
-    width: 300px;
-    padding: 10px;
-    margin-left: 10px;
     background-color: black;
+}
+.wrapper {
+    height: 400px;
+    width: 200px;
     border: 1px solid black;
     position: relative;
+    top: 0;
+    left: 0;
+    background: black;
+    float: left;
 }
 
 .segment {
-    width: 200px;
-    height: 7px;
+    width: 10px;
+    height: 160px;
     background-color: red;
     position: absolute;
-    border-radius:A 10px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
     box-shadow: 0 3px 10px red;
 }
 
-.ugasen {
-    background-color: black;
-    box-shadow: 0 3px 10px black;
-
-}
-
 .s1 {
-    top: 60px;
-    left: 50px;
-    position: absolute;
+    transform: rotate(90deg);
+    top: -40px;
+    left: 95px;
 }
 
 .s2 {
-    transform: rotate(90deg);
-    top: 165px;
-    left: -55px;
-    position: absolute;
+    top: 44px;
+    left: 10px;
 }
 
 .s3 {
-    transform: rotate(90deg);
-    top: 165px;
-    left: 155px;
-    position: absolute;
+    top: 44px;
+    left: 180px;
 }
 
 .s4 {
-    top: 270px;
-    left: 50px;
-    position: absolute;
+    transform: rotate(90deg);
+    top: 129px;
+    left: 95px;
 }
 
 .s5 {
-    transform: rotate(90deg);
-    top: 375px;
-    left: -55px;
-    position: absolute;
+    top: 214px;
+    left: 10px;
 }
 
 .s6 {
-    transform: rotate(90deg);
-    top: 375px;
-    left: 155px;
-    position: absolute;
+    top: 214px;
+    left: 180px;
 }
 
 .s7 {
-    top: 480px;
-    left: 50px;
-    position: absolute;
+    transform: rotate(90deg);
+    top: 299px;
+    left: 95px;
 }
+
+.ugasen {
+    opacity: .03;
+} 
 
 /* transitions CSS */
 
