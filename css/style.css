@@ -1,89 +1,77 @@
 body {
     padding: 0;
     margin: 0;
-    background: whitesmoke
 }
-.header {
+
+
+.head-title {
     background: #f5ed00;
+    padding: 5px;
+}
+
+.head-title h2 {
     color: grey;
-    height: 60px;
     text-align: center;
 }
 
-.header h2{
-    margin: 0;
-    padding: 0;
-}
-
-.title {
+.header {
     background: #1abc9c;
-    color: white;
-    height: 300px;
+    padding: 60px;
+    color: #fff;
     text-align: center;
 }
 
-.title h1{
-    margin: 0;
-    padding: 0;
-}
-
-.links{
+.nav {
+    display: flex;
     background: #333;
-    height: 40px;
-    padding-top: 20px;    
 }
 
-.links a{
-    padding: 20px;
+.nav a {
     color: white;
+    padding: 14px 20px;
     text-decoration: none;
+    text-align: center;
 }
 
-a:hover {
-    background: grey;
+.nav a:hover {
+    background: #ddd;
+    color: black;
 }
 
-.container {
+.row {
     display: flex;
 }
 
-.sidebar {
+.side {
+    flex: 30%;
     background: #f1f1f1;
-    width: 40%;
-}
-
-
-.fakeImage {
-    height: 200px;
-    width: 95%;
-    background:#aaa;
-    border: 1px solid purple;
-}
-
-.smaller {
-    height: 87.5px;
-    margin-bottom: 10px;
+    padding: 20px;
 }
 
 .main {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
+    flex: 70%;
+    background: white;
+    padding: 20px;
 }
 
-.mainText {
-    margin-left: 20px;
+.fakeImg {
+    background: #aaa;
+    padding: 20px;
+    border: 1px solid purple;
+    margin: 5px;
 }
 
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
 
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 700px) {
+    .rom, .nav {
+        flex-direction: column;
+    }
+}
 
 
 /* flexbox */
@@ -112,7 +100,6 @@ a:hover {
 }
 
  */
-
 
 /* kartica */
 
@@ -177,9 +164,8 @@ body {
 }
  */
 
-
-
 /* clock */
+
 /* body {
     background-color: black;
 }
