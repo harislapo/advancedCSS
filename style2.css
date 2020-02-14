@@ -1,13 +1,104 @@
-p {
-  background: lime;
-  padding: 20px;
-  color: #fff;
-  font-size: 22px;
-  border: 1px solid red;
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
 }
 
-p b {
-  font-size: 32px;
-  color: black;
+.wrapper div {
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  color: #fff;
 }
+
+.col1 {
+  background: orange;
+  -ms-grid-column: 3 span;
+      grid-column-start: 3 span;
+}
+
+.col2 {
+  background: red;
+  -ms-grid-column: 2 span;
+      grid-column-start: 2 span;
+}
+
+.col3 {
+  background: lightgrey;
+  -ms-grid-row: 2 span;
+      grid-row-start: 2 span;
+  -ms-grid-column: 2 span;
+      grid-column-start: 2 span;
+}
+
+.col4 {
+  background: lightblue;
+  -ms-grid-column: 3 span;
+      grid-column-start: 3 span;
+}
+
+.col5 {
+  background: burlywood;
+  -ms-grid-column: 1 span;
+      grid-column-start: 1 span;
+}
+
+.col6 {
+  background: purple;
+  -ms-grid-column: 3 span;
+      grid-column-start: 3 span;
+}
+
+/* .wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(3,33%);
+
+    div {
+        font-size: 18px;
+        border: 2px solid whitesmoke;
+        padding: 10px;
+        color: #fff;
+    }
+}
+
+.header {
+    background: orange;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content {
+    background: cyan;
+    grid-column-start: 1;
+    grid-column-end: 3;}
+
+.sidebar {
+    background: lightgrey;
+}
+
+.footer {
+    background: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+ */
+/* example */
+/* p {
+    background: lime;
+    padding: 20px;
+    color: #fff;
+    font-size: 22px;
+    border: 1px solid red;
+    
+
+    b {
+        font-size: 32px;
+        color: black;
+    }
+} */
 /*# sourceMappingURL=style2.css.map */

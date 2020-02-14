@@ -1,4 +1,90 @@
-p {
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(5, 19%);
+
+    div {
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid whitesmoke;
+        padding: 10px;
+        color: #fff;
+    }
+}
+
+.col1 {
+    background: orange;
+    grid-column-start: 3 span;
+}
+
+.col2 {
+    background: red;
+    grid-column-start: 2 span;
+}
+.col3 {
+    background: lightgrey;
+    grid-row-start: 2 span;
+    grid-column-start: 2 span;
+}
+.col4 {
+    background: lightblue;
+    grid-column-start: 3 span;
+}
+.col5 {
+    background: burlywood;
+    grid-column-start: 1 span;
+
+}
+.col6 {
+    background: purple;
+    grid-column-start: 3 span;
+}
+
+/* .wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(3,33%);
+
+    div {
+        font-size: 18px;
+        border: 2px solid whitesmoke;
+        padding: 10px;
+        color: #fff;
+    }
+}
+
+.header {
+    background: orange;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content {
+    background: cyan;
+    grid-column-start: 1;
+    grid-column-end: 3;}
+
+.sidebar {
+    background: lightgrey;
+}
+
+.footer {
+    background: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+ */
+
+
+
+
+
+
+
+
+/* example */
+/* p {
     background: lime;
     padding: 20px;
     color: #fff;
@@ -10,4 +96,4 @@ p {
         font-size: 32px;
         color: black;
     }
-}
+} */
