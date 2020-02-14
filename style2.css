@@ -1,0 +1,13 @@
+p {
+  background: lime;
+  padding: 20px;
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid red;
+}
+
+p b {
+  font-size: 32px;
+  color: black;
+}
+/*# sourceMappingURL=style2.css.map */
