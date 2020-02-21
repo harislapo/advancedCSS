@@ -1,16 +1,116 @@
+var gameDisplay = document.getElementById('game-display');
+var gameState = ['', '', '', '', '', '', '', '', ''];
+var winningCombos = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+var gameActive = true;
+var currentPlayer = 'X';
+
+var allCells = document.getElementsByClassName('col');
+
+for (const cell of allCells) {
+    cell.addEventListener('click', cellClicked)
+}
+
+gameDisplay.innerHTML = playerTurn();
+
+function cellClicked(event) {
+    //click na celiju
+    var cellSelected = event.target;
+    var cellIndex = parseInt(
+        cellSelected.getAttribute('data-cell-index')
+    );
+
+    //uslov da ne mozemo istu celiju dva puta selektovati
+
+    if (gameState[cellIndex] !== '' || !gameActive) {
+        return;
+    }
+
+    handleCellSelected(cellSelected, cellIndex);
+    handleGameRules();
+
+    console.log(gameState);
+
+}
 
 
+function handleCellSelected(cellSelected, cellIndex) {
+    // logika za popunjavanje gameState  
+    cellSelected.innerHTML = currentPlayer;
+
+    gameState[cellIndex] = currentPlayer;
+
+}
+
+function handleGameRules() {
+    var won = false;
+    for (var i = 0; i <= 7; i++) {
+        // [0,1,2], ['X', 'X', 'X']
+        var rule = winningCombos[i];
+        var a = gameState[rule[0]]; // X
+        var b = gameState[rule[1]]; // X
+        var c = gameState[rule[2]]; // X
+
+        if (a === '' || b === '' || c === '') {
+            continue;
+        }
+
+        if (a === b && b === c) {
+            won = true;
+            break;
+        }
+    }
+    if(won){
+        gameDisplay.innerHTML = winMessage();
+        gameActive = false;
+        return;
+    }
+
+    var draw = !gameState.includes('')
+    if(draw){
+        gameDisplay.innerHTML = drawMessage();
+        gameActive = false;
+        return; 
+    }
+    changePlayer();
+}
+
+function changePlayer() {
+    currentPlayer = currentPlayer === 'X' ? '0' : 'X';
+    gameDisplay.innerHTML = playerTurn();
+}
 
 
+function winMessage() {
+    return `Pobijedio je igrac ${currentPlayer}`;
+}
+
+function drawMessage() {
+    return 'Nerijeseno, pokusaj opet';
+}
+
+function playerTurn() {
+    return `Na potezu je igrac ${currentPlayer}`;
+}
 
 
-
-
-
-
-
-
-
+function restartGame() {
+    currentPlayer = 'X';
+    gameActive = true;
+    gameState = ['', '', '', '', '', '', '', '', ''];
+    gameDisplay.innerHTML = playerTurn();
+    for (const cell of allCells) {
+        cell.innerHTML = ' ';
+    }
+}
 
 
 

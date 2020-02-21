@@ -1,4 +1,42 @@
+body {
+    font-family: 'Lacquer';
+    background-color: yellow;
+}
 
+.game-main {
+    display: grid;
+    grid-template-rows: repeat(3, 150px);    
+    grid-template-columns: repeat(3, 150px);
+}
+
+.wrapper {
+    margin: auto;
+    width: 450px;
+    text-align: center;
+}
+
+.col {
+    background: lightgrey;
+    border: 1px solid #333;
+    font-size: 102px;
+    padding: 10px;
+}
+
+button {
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    background: red;
+    color: white;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+
+
+/* 
 .wrapper {
     display: grid;
     grid-template-rows: 100px 100px 100px;
@@ -40,6 +78,8 @@
     background: purple;
     grid-column-start: 3 span;
 }
+ */
+
 
 /* .wrapper {
     display: grid;

@@ -1,58 +1,85 @@
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 100px 100px 100px;
-      grid-template-rows: 100px 100px 100px;
-  -ms-grid-columns: (19%)[5];
-      grid-template-columns: repeat(5, 19%);
+body {
+  font-family: 'Lacquer';
+  background-color: yellow;
 }
 
-.wrapper div {
-  font-size: 20px;
+.game-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (150px)[3];
+      grid-template-rows: repeat(3, 150px);
+  -ms-grid-columns: (150px)[3];
+      grid-template-columns: repeat(3, 150px);
+}
+
+.wrapper {
+  margin: auto;
+  width: 450px;
   text-align: center;
-  border: 2px solid whitesmoke;
+}
+
+.col {
+  background: lightgrey;
+  border: 1px solid #ddd;
+  font-size: 102px;
   padding: 10px;
-  color: #fff;
+}
+
+button {
+  font-size: 22px;
+  padding: 10px;
+  border: none;
+  background: red;
+  color: white;
+}
+
+button:hover {
+  opacity: .6;
+}
+
+/* 
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(5, 19%);
+
+    div {
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid whitesmoke;
+        padding: 10px;
+        color: #fff;
+    }
 }
 
 .col1 {
-  background: orange;
-  -ms-grid-column: 3 span;
-      grid-column-start: 3 span;
+    background: orange;
+    grid-column-start: 3 span;
 }
 
 .col2 {
-  background: red;
-  -ms-grid-column: 2 span;
-      grid-column-start: 2 span;
+    background: red;
+    grid-column-start: 2 span;
 }
-
 .col3 {
-  background: lightgrey;
-  -ms-grid-row: 2 span;
-      grid-row-start: 2 span;
-  -ms-grid-column: 2 span;
-      grid-column-start: 2 span;
+    background: lightgrey;
+    grid-row-start: 2 span;
+    grid-column-start: 2 span;
 }
-
 .col4 {
-  background: lightblue;
-  -ms-grid-column: 3 span;
-      grid-column-start: 3 span;
+    background: lightblue;
+    grid-column-start: 3 span;
 }
-
 .col5 {
-  background: burlywood;
-  -ms-grid-column: 1 span;
-      grid-column-start: 1 span;
-}
+    background: burlywood;
+    grid-column-start: 1 span;
 
+}
 .col6 {
-  background: purple;
-  -ms-grid-column: 3 span;
-      grid-column-start: 3 span;
+    background: purple;
+    grid-column-start: 3 span;
 }
-
+ */
 /* .wrapper {
     display: grid;
     grid-template-rows: 100px 100px 100px;
